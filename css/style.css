@@ -1,0 +1,211 @@
+/* === IMPORTAÇÃO DE FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+Fontes Disponíveis:
+// Sugiro usar esta 
+font-family: "Urbanist", sans-serif; 
+font-family: "Fredoka", sans-serif;
+font-family: "Epilogue", sans-serif;
+font-family: "Nunito", sans-serif;
+font-family: "Oswald", sans-serif;
+*/
+/* ==========================*/
+
+/* ==== FORMATAÇÃO GERAL === */
+html{
+    font-size: clamp(1rem, 2vw + 0.8rem, 2rem); 
+    font-family: "Urbanist", sans-serif; 
+}
+
+/* ==== NAV === */
+header{
+    background-color: #FEF8F5;
+    padding: 4vw 4vw;
+    text-align: center;
+    nav{
+        padding: 2vw 0 0 0;
+        padding-bottom: 30px;
+
+        ul{
+            padding: 18px 20px;
+            padding-bottom: 20px;
+
+            li{
+                padding: 5px 0;
+                font-weight: 500;
+            }
+            li:hover{
+                color: #f17f49;
+                cursor: pointer;
+            }
+        }
+        .button-nav{
+            padding: 8px 20px;
+            font-weight: 600;
+            color: #FEF8F5;
+            background-color: #ED672B;
+            border-radius: 40px;
+        }
+        .button-nav:hover{
+            background-color: #f17f49;
+        }
+    }
+}
+/* ==== Banner === */
+section#banner{
+    padding: 4vw 4vw 0 4vw;
+    background-color: #FEF8F5;
+
+    h1{
+        color: #f17f49;
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+/* ==== why === */
+
+section#why{
+    text-align: center;
+    padding: 4rem;
+    h2{
+        font-size: 2rem;
+        padding-bottom: 30px;
+    }
+
+    ul{
+        padding: 25px;
+    }
+    li{
+        padding: 20px;
+
+        h3{
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 10px 0 8px 0;
+        }
+        p{
+            font-size: 0.9rem;
+            color: rgb(43, 42, 42);
+        }
+    }
+}
+section#customer{
+    background-color: #FEF8F5;
+    text-align: center;
+    padding: 6svw 2vw;
+    h2{
+        font-size: 1.4rem;
+        font-weight: 700;
+        padding-top: 2vw ;
+    }
+    h3{
+        color: #ED672B;
+        font-size: 4rem;
+        padding: 30px;
+        font-family: "Urbanist", sans-serif; 
+    }
+    p{
+        padding: 0 8vw;
+        font-size: 0.9rem;
+    }
+}
+/* ==== off === */
+section#app{
+    background-color: #ED672B;
+    padding: 4vw 4vw 0 4vw;
+    text-align: center;
+
+    h2{
+        font-weight: 700;
+        font-size: 2.2rem;
+        color: #FEF8F5;
+        max-width: 300px;
+        margin: 2vw auto;
+    }
+    p{
+        color: #FEF8F5;
+        font-size: 0.9rem;
+        padding: 0 6vw 4vw;
+    }
+    .button-off{
+        padding: 10px 25px;
+        font-weight: 600;
+        color: #ED672B;
+        background-color: #FEF8F5;
+        border-radius: 40px;
+        font-size: 0.9rem;
+    }
+    .button-off:hover{
+        background-color: #f7d6c8;
+    }
+    
+}
+
+/* ==== footer === */
+
+footer{
+    background-color: #05073C;
+    text-align: center;
+    color: #f7e9e3;
+    padding: 4vw;
+
+    h2{
+        font-weight: 600;
+        padding: 40px;
+    }
+    p{
+        font-size: 0.9rem;
+        padding: 0 40px;
+        padding-bottom: 20px;
+    }
+
+    h3{
+        font-weight: 600;
+        padding: 40px;
+    }
+    ul{
+
+        li{
+            font-size: 0.9rem;
+            padding: 10px;
+        }
+        li:hover{
+            color: #ffe3d7;
+        }
+    }
+}
+
+
+
+
+
+
+/* MEDIA QUERY - DESKTOP */
+@media  screen and (min-width: 600px) {
+header {
+    padding: 0;
+    
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        ul{
+            display: flex;
+            align-items: center;
+
+            li{
+            padding: 5px 1vw;
+            font-size: 0.9rem;
+        }
+            
+        }
+        a{
+            font-size: 0.9rem;
+        }
+        
+    }
+}
+}
